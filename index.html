@@ -9,15 +9,15 @@
 
   <!--sns share -->
   <meta property="og:url" content="https://leedy-s2.github.io/friendship_test/" />
-  <meta property="og:title" content="우정모의고사" />
+  <meta property="og:title" content="Friendship Compatibility Test" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="img/main.gif" />
-  <meta property="og:description" content="우리 우정의 소소한 중간평가" />
+  <meta property="og:image" content="img/main.jpg" />
+  <meta property="og:description" content="A small evaluation of a friendship" />
 
   <!-- favicon-->
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
-  <title>우정테스트</title>
+  <title>Friendship Test</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/default.css">
@@ -32,19 +32,24 @@
   <div class="container">
     <!--메인 페이지 -->
     <section id="main" class="mx-auto my-3 py-5 px-1">
-      <h2> 우리는 서로에 대해 <br> 얼마나 알고 있을까? </h2>
-      <h1 class="title"> [ 우정 모의고사 ] </h1>
+      <h2 style="font-size: large;"> How much do you know about each other </h2>
+      <h1 class="title"> [ Friendship Compatibility Test ] </h1>
       <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mt-3">
-        <img src="./img/main.gif" alt="background" class="img-fluid">
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; padding-bottom: 10px;">
+          <div style="padding-right: 20px; font-size: 100%; display: flex; align-items: center;"><p style="margin: 0">Presented by:</p></div>
+          <img src="./img/osc.jpg" alt="background" width="70px">
+        </div>
+        <img src="./img/main.jpg" alt="background" class="img-fluid">
       </div>
 
-      <p class="subtext mt-4">눈빛만 봐도 알지!꒰◍ˊ◡ˋ꒱੭ु<br>우정의 레벨이 궁금하다면<br> 하단의 버튼을 눌러주세요!</p>
+      <p class="subtext mt-4">If you're curious about the level of your friendship<br>Please press the button below!</p>
 
-      <input type="text" class="txt_name" placeholder="출제자 이름">
-      <button type="button" class="btn btn-outline-dark" onclick="js:begin(1)">출제</button>
+      <input type="text" class="txt_name" placeholder="Quizzer">
+    <button type="button" class="btn btn-outline-dark" onclick="js:begin(1)">Quizzer</button>
       <br>
-      <input type="text" class="txt_friend" placeholder="제출자 이름">
-      <button type="button" class="btn btn-outline-primary mt-2" onclick="js:begin(2)">풀기</button>
+      <input type="text" class="txt_friend" placeholder="Contestant">
+      <button type="button" class="btn btn-outline-primary mt-2" onclick="js:begin(2)">Answer</button>
     </section>
 
 
@@ -68,10 +73,8 @@
       <hr>
       <div class="resultDesc"></div>
       <hr>
-      <p class="mt-4">더 많은 친구들과 공유하고 싶다면<br> 하단의 버튼을 눌러주세요!</p>
 
-      <button type="button" class="kakao py-2 px-3 mt-2" onclick="js:kakaoShare()">공유하기</button>
-      <button type="button" class="goback py-2 px-3 mt-2" onClick="window.location.reload()">돌아가기</button>
+      <button type="button" class="goback py-2 px-3 mt-2" onClick="window.location.reload()">Go back</button>
     </section>
 
     <script src="./js/data.js" charset="utf-8"></script>

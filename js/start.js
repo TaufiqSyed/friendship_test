@@ -51,11 +51,11 @@ function goMain(){
     const friendName = document.querySelector('.friendName');
     var self = document.querySelector('.txt_name').value;
     var friend = document.querySelector('.txt_friend').value;
-    friendName.innerHTML = self +'와 '+friend+'의';
+    friendName.innerHTML = self + ' &   ' + friend;
 
     var friendScore = Math.round(point/endPoint*100);
     const score = document.querySelector('.score');
-    score.innerHTML = '우정모의고사 점수는 '+friendScore+'점';
+    score.innerHTML = 'Friendship test score: '+friendScore+' points';
 
     const resultName = document.querySelector('.resultName');
     console.log(infoList[level].name);
