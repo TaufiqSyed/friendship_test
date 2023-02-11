@@ -40,7 +40,7 @@ const qnaList = [
   },
   {
     q: '8. Do you believe in aliens?',
-    a: ['a. If there were, why hasn\'t they been revealed yet?','b. They must exist somewhere!','c. I don\'t care either way']
+    a: ['a. If there were, why haven\'t they been revealed yet?','b. They must exist somewhere!','c. I don\'t care either way']
   },
   {
     q: '9. Would you take a road trip with your friend?',
